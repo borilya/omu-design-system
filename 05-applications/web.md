@@ -16,7 +16,7 @@
 >
 > OMU is a designer power strip, made for a beautifully styled home. We design power strips, extension cords, cables and accessories made to be seen — beautiful, tactile, and safe.
 
-Обратите внимание: в выдаче бренд пишется капсом `OMU`, тогда как логотип и хендл в соцсетях — строчными `omu`. Это осознанное разделение или расхождение — см. открытые вопросы.
+Капс `OMU` здесь соответствует правилу: имя в наборном тексте пишется капсом, строчными — только знак и хендл. См. [01-brand/README.md](../01-brand/README.md).
 
 ## Фича-блок
 
