@@ -2,23 +2,38 @@
 
 Живые файлы бренда. Правила использования — не здесь, а в [`02-identity/`](../02-identity/).
 
-| Папка | Что внутри | Правила |
-|---|---|---|
-| `logo/` | `logo_black.ai`, `logo_black.pdf` — вординарк, чёрная версия | [logo.md](../02-identity/logo.md) |
-| `fonts/` | TT Bluescreens Pro Extended Medium, TT Firs Text Normal — **trial** | [typography.md](../02-identity/typography.md) |
-| `images/` | пусто | [imagery.md](../02-identity/imagery.md) |
+## `logo/`
 
-Рендеры продукта живут отдельно, в [`03-product/renders/`](../03-product/renders/) — вместе со своим разбором.
+Правила: [logo.md](../02-identity/logo.md)
 
-## ⚠️ Шрифты нельзя использовать
+| Файл | Что |
+|---|---|
+| `omu-wordmark-dark.svg` | Вординарк для светлого фона, `#262423` |
+| `omu-wordmark-light.svg` | Вординарк для тёмного фона, `#FFFFFF` |
+| `omu-symbol-dark-on-light.svg` | Символ `m` в круге: тёмный глиф, светлый круг |
+| `omu-symbol-light-on-dark.svg` | Символ `m` в круге: светлый глиф, тёмный круг |
+| `logo_black.ai`, `logo_black.pdf` | Исходник вординарка, тёмная версия |
 
-Оба файла — trial-версии TypeType с прямым запретом в метаданных: *not for commercial or personal use*. Ни лендинг, ни презентацию, ни упаковку на них выпускать нельзя. Нужна коммерческая лицензия: [typetype.org/licensing](https://typetype.org/licensing/).
+⚠️ Светлые значения в SVG не равны White палитры: вординарк `#FFFFFF`, символ `#F4EEEA`, палитра `#D7D2CB`. До выяснения перекрашивать под палитру вручную.
+
+## `fonts/`
+
+Правила: [typography.md](../02-identity/typography.md)
+
+| Файл | Роль |
+|---|---|
+| `TT_Bluescreens_Pro_Trial_Extended_Medium.ttf` | Заголовки |
+| `TT Firs Text Trial Normal.ttf` | Наборный текст |
+
+⚠️ Оба файла trial. Черновики и пробы — можно, это и есть evaluation. Всё, что уходит наружу или в производство, — нельзя. Нужна коммерческая лицензия: [typetype.org/licensing](https://typetype.org/licensing/).
+
+## `images/`
+
+Пусто. Правила: [imagery.md](../02-identity/imagery.md). Рендеры продукта живут отдельно, в [`03-product/renders/`](../03-product/renders/).
 
 ## Чего не хватает
 
-- Светлая версия логотипа для тёмного фона.
-- Иконка-марка — глиф `m` в круге, для аватаров и favicon.
-- SVG и favicon.
+- Favicon и растровые размеры логотипа под соцсети.
 - Совмещённая версия «знак + подпись `Hide nothing.`».
 - Лицензионные шрифты и woff2 под веб.
 
@@ -26,4 +41,4 @@
 
 Один файл — одна роль. Никаких `logo_final_v3_ok.ai`. Если появилась новая версия ассета, старая либо удаляется, либо уезжает в `_archive/` с датой — но не остаётся рядом с живой.
 
-Для каждого шрифта рядом должна лежать лицензия. Без лицензии шрифт нельзя отдавать подрядчику — сейчас это ровно тот случай.
+Для каждого шрифта рядом должна лежать лицензия. Без лицензии шрифт нельзя отдавать подрядчику.
