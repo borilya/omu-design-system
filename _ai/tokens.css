@@ -1,0 +1,86 @@
+/* OMU — токены дизайн-системы для веба и артефактов.
+   Источник правды: 02-identity/color.md, typography.md, tokens.json.
+   Обновлено 2026-07-30.
+
+   ⚠️ Шкалы размеров, отступов и радиусов помечены DRAFT: это предложение,
+   не решение владельца. См. _meta/open-questions.md. */
+
+:root {
+  /* ── Палитра коммуникаций ──────────────────────────────────────
+     Три цвета. Warm Gray семейство. НЕ путать с цветами продукта. */
+  --omu-white: #D7D2CB;   /* Pantone Warm Gray 1 C. Тёплый светлый камень, НЕ белый */
+  --omu-black: #262423;   /* Тёплый очень тёмный нейтральный, НЕ чёрный */
+  --omu-green: #808B74;   /* Плоскость и акцент. НЕ поверхность для текста */
+
+  /* Рабочие роли. Вся типографика живёт на паре white/black */
+  --omu-bg: var(--omu-white);
+  --omu-fg: var(--omu-black);
+  --omu-bg-inverse: var(--omu-black);
+  --omu-fg-inverse: var(--omu-white);
+  --omu-accent: var(--omu-green);
+
+  /* Контраст WCAG 2.1:
+     white/black 10.28 — любой текст
+     black/green  4.31 — только крупный текст от 24px или 19px bold
+     white/green  2.38 — не годится для текста вообще */
+
+  /* ── Типографика ───────────────────────────────────────────────
+     Файлы шрифтов trial TypeType: внутренние черновики можно,
+     внешний релиз — только по коммерческой лицензии. */
+  --omu-font-heading: 'TT Bluescreens Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --omu-font-body: 'TT Firs Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  /* DRAFT — модульная шкала 1.25, база 16px */
+  --omu-text-display: 64px;  --omu-lh-display: 1.05; --omu-ls-display: -0.02em;
+  --omu-text-h1: 48px;       --omu-lh-h1: 1.1;       --omu-ls-h1: -0.015em;
+  --omu-text-h2: 32px;       --omu-lh-h2: 1.15;      --omu-ls-h2: -0.01em;
+  --omu-text-h3: 24px;       --omu-lh-h3: 1.25;      --omu-ls-h3: 0;
+  --omu-text-lead: 20px;     --omu-lh-lead: 1.5;
+  --omu-text-body: 16px;     --omu-lh-body: 1.6;
+  --omu-text-caption: 14px;  --omu-lh-caption: 1.4;
+
+  /* DRAFT — шаг 4px */
+  --omu-space-1: 4px;
+  --omu-space-2: 8px;
+  --omu-space-3: 12px;
+  --omu-space-4: 16px;
+  --omu-space-6: 24px;
+  --omu-space-8: 32px;
+  --omu-space-12: 48px;
+  --omu-space-16: 64px;
+  --omu-space-24: 96px;
+  --omu-space-32: 128px;
+
+  /* DRAFT — мягкий прямоугольник, повторяет язык формы изделия и знака */
+  --omu-radius-sm: 6px;
+  --omu-radius-md: 12px;
+  --omu-radius-lg: 20px;
+  --omu-radius-pill: 999px;
+}
+
+/* ── Базовые правила ─────────────────────────────────────────────
+   Матовость — свойство бренда. Никаких глянцевых градиентов,
+   неоновых свечений и стеклянных бликов. */
+
+body {
+  background: var(--omu-bg);
+  color: var(--omu-fg);
+  font-family: var(--omu-font-body);
+  font-size: var(--omu-text-body);
+  line-height: var(--omu-lh-body);
+}
+
+h1, h2, h3, .omu-display {
+  font-family: var(--omu-font-heading);
+  font-weight: 500;
+}
+
+/* Зелёная плоскость: текст только тёмный и только крупный */
+.omu-surface-green {
+  background: var(--omu-green);
+  color: var(--omu-black);
+}
+.omu-surface-green :where(p, li, small, .omu-body) {
+  /* контраст 4.31 — мелкий текст здесь не проходит WCAG AA */
+  font-size: var(--omu-text-h3);
+}
