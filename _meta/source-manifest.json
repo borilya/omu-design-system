@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "updated": "2026-07-30",
+    "checksum": "sha256",
+    "note": "Переносимый реестр первичных источников. Missing означает, что правило может быть описано в системе, но исходный файл отсутствует в репозитории."
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "Оригинал бренд-платформы",
+      "status": "canonical-copy",
+      "originalNames": ["omu_brand_platform (2).md"],
+      "repositoryFiles": [
+        {
+          "path": "01-brand/brand-platform.md",
+          "sha256": "3b13c83c074de7cc46cc56d278ecbe4ac34c949a8f9d2be564b285f77438c27d",
+          "role": "Дословная каноническая копия; отдельный оригинал не сохранён"
+        }
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "title": "CMF OMU Extension cord Rev. 03",
+      "status": "available",
+      "originalNames": ["OMU_CMF_REV03.pdf"],
+      "repositoryFiles": [
+        {
+          "path": "03-product/cmf/OMU_CMF_REV03.pdf",
+          "sha256": "561eeedd4cfc8604882c9970082abc3bbd125d94ededc698676bd9eebcb3a451",
+          "role": "Первичный документ владельца"
+        }
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "title": "Исходник тёмного вординарка",
+      "status": "available",
+      "originalNames": ["logo_black.ai", "logo_black.pdf"],
+      "repositoryFiles": [
+        {
+          "path": "04-assets/logo/logo_black.ai",
+          "sha256": "64db52d7d0465de42bc215379a565821adc34581b6a7f42f90d956c1d59a50a9",
+          "role": "Редактируемый исходник"
+        },
+        {
+          "path": "04-assets/logo/logo_black.pdf",
+          "sha256": "5e452095fc67ea6a93d33fcd35dd55b6c66658c54ddf5b4cf918bdc6c7833c26",
+          "role": "PDF-копия исходника"
+        }
+      ]
+    },
+    {
+      "id": "SRC-004",
+      "title": "Четыре SVG-версии логотипа",
+      "status": "available",
+      "originalNames": [
+        "Group 21.svg",
+        "Group 21 (1).svg",
+        "symbol 1.svg",
+        "symbol 2.svg"
+      ],
+      "repositoryFiles": [
+        {
+          "path": "04-assets/logo/omu-symbol-dark-on-light.svg",
+          "sha256": "541b5d26772c32bf8b6128a67bc1b7d4247958efad3f72e8e03ffd2f40c65a05"
+        },
+        {
+          "path": "04-assets/logo/omu-symbol-light-on-dark.svg",
+          "sha256": "a036f2c94edcc02710ae867528420bf3608d28b599932cfb91f86ad9e1b9355a"
+        },
+        {
+          "path": "04-assets/logo/omu-wordmark-dark.svg",
+          "sha256": "f18c01d2414bf6fa395776be1ab366ad8d9b70b8af240be4c534267461b2876d"
+        },
+        {
+          "path": "04-assets/logo/omu-wordmark-light.svg",
+          "sha256": "562bd6971544a9d0d223a2b142511c17351edf50c053cd6e5ea3f6af9d24fed2"
+        }
+      ]
+    },
+    {
+      "id": "SRC-005",
+      "title": "Trial-файлы TypeType",
+      "status": "restricted-trial",
+      "originalNames": [
+        "TT Firs Text Trial Normal.ttf",
+        "TT_Bluescreens_Pro_Trial_Extended_Medium.ttf"
+      ],
+      "repositoryFiles": [
+        {
+          "path": "04-assets/fonts/TT Firs Text Trial Normal.ttf",
+          "sha256": "ca484abd0b7f70322c18b47e1cca1df901069571bd83d6d3204eff8a36bd5882"
+        },
+        {
+          "path": "04-assets/fonts/TT_Bluescreens_Pro_Trial_Extended_Medium.ttf",
+          "sha256": "248cf66643639472307f4d943c7c551a5c9f0fca392bc09c1ada5f2119cec9f3"
+        }
+      ]
+    },
+    {
+      "id": "SRC-006",
+      "title": "Фрагменты бренд-деки и слайд палитры",
+      "status": "partial",
+      "originalNames": ["2336.png", "2338.png", "2341.png", "цвета бренда.png"],
+      "repositoryFiles": [
+        {
+          "path": "_sources/2026-07-30/SRC-006/2336.png",
+          "sha256": "44f3b932419d59c3bd31db9c621634b76a93775b9f7620b1883e5e4c8850a7b0",
+          "role": "Одобренное визуальное направление лицевой и оборотной стороны упаковки"
+        },
+        {
+          "path": "_sources/2026-07-30/SRC-006/2338.png",
+          "sha256": "e9fa78a38862eec0b817ae370db29429d16ab92ec0f8d8c13daf366747e9505c",
+          "role": "Слайд фирменных шрифтов"
+        },
+        {
+          "path": "_sources/2026-07-30/SRC-006/2341.png",
+          "sha256": "a15e92172cc30a010c261fab43b683c2b79c1a74c67a209f37b3cfd644728b2e",
+          "role": "Веб-фича-блок из восьми плиток"
+        },
+        {
+          "path": "_sources/2026-07-30/SRC-006/цвета бренда.png",
+          "sha256": "4356f013d5d40c28f7d23d1800bf9b58e3f8042dff8db4ba8b334cf72ca0dcbd",
+          "role": "Слайд палитры White, Black и зелёной полосы"
+        }
+      ],
+      "note": "Четыре растровых слайда сохранены; исходный редактируемый файл деки отсутствует"
+    },
+    {
+      "id": "SRC-007",
+      "title": "Шесть интерьерных рендеров",
+      "status": "available",
+      "originalNames": [
+        "2. У дивана.png",
+        "3. У стола и стульев.png",
+        "4. На стуле_Post.png",
+        "5. На металлическом столике.png",
+        "тестовая сцена_Зеленый.png",
+        "тестовая сцена_Синий.png"
+      ],
+      "repositoryFiles": [
+        {
+          "path": "03-product/renders/interior/omu-3x-interior-sofa-warm-grey-r03.png",
+          "sha256": "7bba793eaebe1c40a3629e4ca126ab5d44a863e0475ffad8732da499ad3b299c"
+        },
+        {
+          "path": "03-product/renders/interior/omu-3x-interior-dining-terracotta-r03.png",
+          "sha256": "60ec1bdefd9517a9425c9640f6007f7156ac152fc720a0ca364e6244ddc7a28d"
+        },
+        {
+          "path": "03-product/renders/interior/omu-3x-interior-chair-black-r03.png",
+          "sha256": "418041ce0a404cd3c709ce6e40a0420bea46db9ddd704d64143faef621466a89"
+        },
+        {
+          "path": "03-product/renders/interior/omu-3x-interior-wall-mount-olive-r03.png",
+          "sha256": "d2bc06f261680fd1126483626f63f0843cad91dd3275574c8031ea4d47365881"
+        },
+        {
+          "path": "03-product/renders/interior/omu-3x-interior-kitchen-olive-r03.png",
+          "sha256": "f9fbda8180993931abde411c3faf00d402f761026ccf37a127ffd58cf958a870"
+        },
+        {
+          "path": "03-product/renders/interior/omu-3x-interior-kitchen-navy-r03.png",
+          "sha256": "648146238c527944314ce085acbce251ba1f111fd2a4bb6ca4bedca54d2548b8"
+        }
+      ]
+    },
+    {
+      "id": "SRC-008",
+      "title": "Figma-проект айдентики",
+      "status": "missing",
+      "originalNames": [],
+      "repositoryFiles": [],
+      "note": "Стабильная ссылка на Figma не передана"
+    },
+    {
+      "id": "SRC-009",
+      "title": "Оригинальные имена 14 студийных рендеров Rev. 03",
+      "status": "available",
+      "originalNames": [
+        "1.75 8.png",
+        "1.75 7.png",
+        "1.75 5.png",
+        "1.75 6.png",
+        "1.75 4.png",
+        "1.75 3.png",
+        "1.75 2.png",
+        "1.56 11.png",
+        "1.56 9.png",
+        "1.56 14.png",
+        "1.56 12.png",
+        "1.56 10.png",
+        "1.56 8.png",
+        "1.44 5.png"
+      ],
+      "repositoryFiles": [
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-warm-grey-r03.png",
+          "sha256": "ce6284cf9788a2d413c013f276c335e21d188224c85b7163164085786c81406e"
+        },
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-olive-r03.png",
+          "sha256": "ce24c432a64556a0d3b0df42a33daa1f914ff53c0e2f13bad38ca69ff8f0a545"
+        },
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-terracotta-r03.png",
+          "sha256": "5ed5474920d4ad10e7c02d1807a5357705c62143174a017a68bd8f0f6ff2cc6f"
+        },
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-brown-r03.png",
+          "sha256": "8b9f6feedfcd6df2251f7e4def7b75792e9da965d73b43410007e4e16421aae5"
+        },
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-graphite-r03.png",
+          "sha256": "0321a89f9db863f57864efcb2f533aeefdf18f8956c1117e50b6d3337d336a09"
+        },
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-black-r03.png",
+          "sha256": "df4712b2f0a618edf09f6e80da5b3275ba463e0163c1e0c209b622afc2a38ac5"
+        },
+        {
+          "path": "03-product/renders/hero/omu-3x-hero-navy-r03.png",
+          "sha256": "d7f4678ce1e04c069936f9918a10754b936f96bc3e64c3cabfdce05c27f7724a"
+        },
+        {
+          "path": "03-product/renders/front/omu-3x-front-navy-r03.png",
+          "sha256": "ec42c9418eabe0339a25771981cde6e27ee22861a12f2c8ef1dcbedaf36043ef"
+        },
+        {
+          "path": "03-product/renders/front/omu-3x-front-black-r03.png",
+          "sha256": "a122c991bed9e016ab48868ae3fc51f7905f375b70cd95eab852f8bdc59680fb"
+        },
+        {
+          "path": "03-product/renders/front/omu-3x-front-olive-r03.png",
+          "sha256": "a5c2d4ee342baf8a698b3e74c246e842072d808d06a7dd9e5e8a72538c848205"
+        },
+        {
+          "path": "03-product/renders/front/omu-3x-front-terracotta-r03.png",
+          "sha256": "5a913fe9e7819bd4a91afb58d9ef6d518d4eae11cf061be4ee8000646c8d6847"
+        },
+        {
+          "path": "03-product/renders/front/omu-3x-front-graphite-r03.png",
+          "sha256": "6bbfb726f4afe2970487584aca703c5c19d8399b2aa05d9a86063c5878c57b9a"
+        },
+        {
+          "path": "03-product/renders/front/omu-3x-front-warm-grey-r03.png",
+          "sha256": "9a43ece860f3f9cd2896b1c8d20043c08fd8a57add158fbfcc9308307f9317a0"
+        },
+        {
+          "path": "03-product/renders/top/omu-3x-top-navy-r03.png",
+          "sha256": "5a08c7858f92de659ae9c7ecc32646c8c393ebd965f73845468233a5cc5bdda9"
+        }
+      ],
+      "note": "Входящие файлы побайтно совпали с ранее переименованными живыми рендерами; дубликаты не сохранены"
+    }
+  ]
+}

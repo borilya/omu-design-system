@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "product": "OMU Extension cord, 3× Universal",
+    "revision": "Rev. 03",
+    "updated": "2026-07-30",
+    "checksum": "sha256",
+    "status": "empty"
+  },
+  "evidence": [
+    {
+      "id": "EVID-001",
+      "title": "Полная электрическая спецификация",
+      "status": "missing",
+      "requiredFor": ["universal-outlets", "rated-load", "thermal-stability"],
+      "documentFiles": []
+    },
+    {
+      "id": "EVID-002",
+      "title": "Спецификация USB-C PD 3.0 + PPS",
+      "status": "missing",
+      "requiredFor": ["pd-3-pps", "fast-charging"],
+      "documentFiles": []
+    },
+    {
+      "id": "EVID-003",
+      "title": "Сертификаты и approvals для ОАЭ",
+      "status": "missing",
+      "requiredFor": ["certified-safe", "uae-compliance"],
+      "documentFiles": []
+    },
+    {
+      "id": "EVID-004",
+      "title": "CB certificates и отчёты",
+      "status": "missing",
+      "requiredFor": ["certified-safe", "cb-compliance"],
+      "documentFiles": []
+    },
+    {
+      "id": "EVID-005",
+      "title": "Протоколы нагрузки и термических испытаний",
+      "status": "missing",
+      "requiredFor": ["rated-load", "real-loads", "thermal-stability"],
+      "documentFiles": []
+    },
+    {
+      "id": "EVID-006",
+      "title": "Испытание магнитного крепления",
+      "status": "missing",
+      "requiredFor": ["magnetic-holding-force"],
+      "documentFiles": []
+    }
+  ]
+}
+
