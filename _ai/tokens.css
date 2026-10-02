@@ -18,7 +18,7 @@
   --omu-bg-inverse: var(--omu-black);
   --omu-fg-inverse: var(--omu-white);
 
-  /* DRAFT — производные поверхности, выведены из White */
+  /* Производные поверхности, выведены из White. Утверждены владельцем 2026-10-02 */
   --omu-surface-page: var(--omu-white);
   --omu-surface-tile: #E2DED8;
   --omu-surface-sunken: #CBC5BD;
