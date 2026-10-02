@@ -1,0 +1,16 @@
+/* DRAFT — 4px step, radii from the soft-rectangle form language of the object and the mark. */
+:root{
+  --omu-space-1:4px;  --omu-space-2:8px;  --omu-space-3:12px; --omu-space-4:16px;
+  --omu-space-6:24px; --omu-space-8:32px; --omu-space-12:48px;--omu-space-16:64px;
+  --omu-space-24:96px;--omu-space-32:128px;
+
+  --omu-radius-sm:6px; --omu-radius-md:12px; --omu-radius-lg:20px; --omu-radius-pill:999px;
+
+  /* Matte brand: shadows are diffuse and shallow, never glossy drop shadows */
+  --omu-shadow-soft:0 2px 8px rgba(38,36,35,.06);
+  --omu-shadow-lift:0 12px 32px rgba(38,36,35,.10);
+
+  --omu-container:1200px;
+  --omu-ease:cubic-bezier(.2,.6,.2,1); /* @kind other */
+  --omu-duration:220ms; /* @kind other */
+}

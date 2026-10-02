@@ -2,3 +2,13 @@
 .claude/settings.local.json
 Thumbs.db
 *.tmp
+
+# Лицензионные шрифты TypeType (Desktop license) не распространяются через git.
+# Файлы и лицензии лежат только локально в 04-assets/fonts/, см. 04-assets/README.md.
+04-assets/fonts/*
+!04-assets/fonts/.gitkeep
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot

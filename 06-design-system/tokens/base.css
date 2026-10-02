@@ -1,0 +1,11 @@
+/* Base element rules. Matte brand: no gradients, no glass, no neon. */
+body{background:var(--omu-bg);color:var(--omu-fg);font-family:var(--omu-font-body);font-size:var(--omu-text-body);line-height:var(--omu-lh-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3,.omu-display{font-family:var(--omu-font-heading);font-weight:700;margin:0}
+h1{font-size:var(--omu-text-h1);line-height:var(--omu-lh-h1);letter-spacing:var(--omu-ls-h1)}
+h2{font-size:var(--omu-text-h2);line-height:var(--omu-lh-h2);letter-spacing:var(--omu-ls-h2)}
+h3{font-size:var(--omu-text-h3);line-height:var(--omu-lh-h3)}
+.omu-display{font-size:var(--omu-text-display);line-height:var(--omu-lh-display);letter-spacing:var(--omu-ls-display)}
+a{color:var(--omu-fg);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:opacity var(--omu-duration) var(--omu-ease)}
+a:hover{opacity:.62}
+.omu-surface-dark{background:var(--omu-black);color:var(--omu-white)}
+.omu-surface-dark a{color:var(--omu-white)}
