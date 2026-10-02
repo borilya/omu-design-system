@@ -260,36 +260,36 @@
         },
         {
           "path": "04-assets/logo/omu-wordmark-dark.svg",
-          "sha256": "964b496bea0363ef0a23a8606d1d3c51db93c7f5750880278d017620ccf44750",
+          "sha256": "0cf09ee08bc05718d959406acab1d65b9f5223e5898190e5c84ee54a4f50d2c9",
           "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
         },
         {
           "path": "04-assets/logo/omu-wordmark-light.svg",
-          "sha256": "1be01d7005a4c244554b9a94a6ae3fa8ec7cceae9a84fe2fced89c36a6c704ab",
+          "sha256": "f157fa3854fba969217e422694956be4d00612903b27cf1e34728012b53ff353",
           "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
         },
         {
           "path": "04-assets/logo/omu-symbol-dark-on-light.svg",
-          "sha256": "5ca8e7a6ea76812679bc4d0f4c7c11e7811198264ad888e15b1d97f56b20a1ef",
+          "sha256": "c8b8b8c729df760028ea6300d6712abb986e2b0ff5c5f907a69f3dd01b95bc34",
           "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
         },
         {
           "path": "04-assets/logo/omu-symbol-light-on-dark.svg",
-          "sha256": "1050a6706cbef801b8a3b6be5a59c7e6ecf799fa86ddd5baf1698cf05c0f92ca",
+          "sha256": "02eb96ab09585a4be2f304a591ab0d7e709c2901eb80adfa167e36ced9f1c94c",
           "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
         },
         {
           "path": "04-assets/logo/omu-mark-dark.svg",
-          "sha256": "cb6ada38e5147992556f851f28d42dd05c56718a226a6b8ecead847477275040",
+          "sha256": "2f37b5e3469c7b50bde41ec73656d6940d706d7d8cedeb511e937c75b02a72e5",
           "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
         },
         {
           "path": "04-assets/logo/omu-mark-light.svg",
-          "sha256": "2838a58033c9572f4a66b21d917513139a94d469677c893cd39042381df285b2",
+          "sha256": "6daa3974bb58c5b244924b55024000dec5eaf90b4ba0c43f4f415279f141fe53",
           "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
         }
       ],
-      "note": "Живые SVG пришли в экспорте SRC-011 уже переименованными и перекрашенными в палитру; сырьё сохранено как есть. C2PA-метаданные внутри SVG не вырезаны, вопреки описанию экспорта"
+      "note": "Живые SVG пришли в экспорте SRC-011 уже переименованными и перекрашенными в палитру; сырьё сохранено как есть. C2PA-метаданные (Content Credentials Anthropic) вырезаны из живых SVG 2026-10-02 по решению владельца; в сырье сохранены"
     },
     {
       "id": "SRC-011",
