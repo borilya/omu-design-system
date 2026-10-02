@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-07-30",
+    "updated": "2026-10-02",
     "checksum": "sha256",
     "note": "Переносимый реестр первичных источников. Missing означает, что правило может быть описано в системе, но исходный файл отсутствует в репозитории."
   },
@@ -52,50 +52,18 @@
     {
       "id": "SRC-004",
       "title": "Четыре SVG-версии логотипа",
-      "status": "available",
-      "originalNames": [
-        "Group 21.svg",
-        "Group 21 (1).svg",
-        "symbol 1.svg",
-        "symbol 2.svg"
-      ],
-      "repositoryFiles": [
-        {
-          "path": "04-assets/logo/omu-symbol-dark-on-light.svg",
-          "sha256": "541b5d26772c32bf8b6128a67bc1b7d4247958efad3f72e8e03ffd2f40c65a05"
-        },
-        {
-          "path": "04-assets/logo/omu-symbol-light-on-dark.svg",
-          "sha256": "a036f2c94edcc02710ae867528420bf3608d28b599932cfb91f86ad9e1b9355a"
-        },
-        {
-          "path": "04-assets/logo/omu-wordmark-dark.svg",
-          "sha256": "f18c01d2414bf6fa395776be1ab366ad8d9b70b8af240be4c534267461b2876d"
-        },
-        {
-          "path": "04-assets/logo/omu-wordmark-light.svg",
-          "sha256": "562bd6971544a9d0d223a2b142511c17351edf50c053cd6e5ea3f6af9d24fed2"
-        }
-      ]
+      "status": "superseded",
+      "originalNames": ["Group 21.svg", "Group 21 (1).svg", "symbol 1.svg", "symbol 2.svg"],
+      "repositoryFiles": [],
+      "note": "Заменён комплектом SRC-010 от 2026-09-11. Файлы с теми же именами перезаписаны новыми SVG; прежние версии есть в истории git. Старые SHA-256: omu-symbol-dark-on-light.svg 541b5d26772c32bf8b6128a67bc1b7d4247958efad3f72e8e03ffd2f40c65a05; omu-symbol-light-on-dark.svg a036f2c94edcc02710ae867528420bf3608d28b599932cfb91f86ad9e1b9355a; omu-wordmark-dark.svg f18c01d2414bf6fa395776be1ab366ad8d9b70b8af240be4c534267461b2876d; omu-wordmark-light.svg 562bd6971544a9d0d223a2b142511c17351edf50c053cd6e5ea3f6af9d24fed2"
     },
     {
       "id": "SRC-005",
       "title": "Trial-файлы TypeType",
-      "status": "restricted-trial",
-      "originalNames": [
-        "TT Firs Text Trial Normal.ttf",
-        "TT_Bluescreens_Pro_Trial_Extended_Medium.ttf"
-      ],
-      "repositoryFiles": [
-        {
-          "path": "04-assets/fonts/TT Firs Text Trial Normal.ttf",
-          "sha256": "ca484abd0b7f70322c18b47e1cca1df901069571bd83d6d3204eff8a36bd5882"
-        },
-        {
-          "path": "04-assets/fonts/TT_Bluescreens_Pro_Trial_Extended_Medium.ttf",
-          "sha256": "248cf66643639472307f4d943c7c551a5c9f0fca392bc09c1ada5f2119cec9f3"
-        }
-      ]
+      "status": "removed",
+      "originalNames": ["TT Firs Text Trial Normal.ttf", "TT_Bluescreens_Pro_Trial_Extended_Medium.ttf"],
+      "repositoryFiles": [],
+      "note": "Удалены из репозитория 2026-10-02 после замены лицензионным комплектом SRC-012. Остаются в истории git. Старые SHA-256: TT Firs Text Trial Normal.ttf ca484abd0b7f70322c18b47e1cca1df901069571bd83d6d3204eff8a36bd5882; TT_Bluescreens_Pro_Trial_Extended_Medium.ttf 248cf66643639472307f4d943c7c551a5c9f0fca392bc09c1ada5f2119cec9f3"
     },
     {
       "id": "SRC-006",
@@ -252,6 +220,105 @@
         }
       ],
       "note": "Входящие файлы побайтно совпали с ранее переименованными живыми рендерами; дубликаты не сохранены"
+    },
+    {
+      "id": "SRC-010",
+      "title": "Новый комплект логотипа: шесть SVG и скриншот",
+      "status": "available",
+      "originalNames": [
+        "logo.svg",
+        "Vector (1).svg",
+        "symbol 1.svg",
+        "symbol 2.svg",
+        "Screenshot 2026-09-11 at 13.53.13.png"
+      ],
+      "repositoryFiles": [
+        {
+          "path": "_sources/2026-10-02/SRC-010/logo.svg",
+          "sha256": "4c5c41d3bf956cfc1a9dd7080cb34733287c72a0a547b90ea869bf1205bc90e9",
+          "role": "Сырьё владельца"
+        },
+        {
+          "path": "_sources/2026-10-02/SRC-010/Vector (1).svg",
+          "sha256": "bb2109da781756174cbf3b39913b1ec91b46234b024b62ca3425ca1630286640",
+          "role": "Сырьё владельца"
+        },
+        {
+          "path": "_sources/2026-10-02/SRC-010/symbol 1.svg",
+          "sha256": "1ee9af55d4057cb9405b4e4eddc1f0ad04aeeb011728edc369de86d19c73228a",
+          "role": "Сырьё владельца"
+        },
+        {
+          "path": "_sources/2026-10-02/SRC-010/symbol 2.svg",
+          "sha256": "bb10e5acf11756c2e025331c562e125b604058c6b246a9b12f8fb3f8146a49c3",
+          "role": "Сырьё владельца"
+        },
+        {
+          "path": "_sources/2026-10-02/SRC-010/Screenshot 2026-09-11 at 13.53.13.png",
+          "sha256": "88a097614488cd7a10feb1115cf1ebff23c138edd843a3e27fb77d914caeb8c7",
+          "role": "Сырьё владельца"
+        },
+        {
+          "path": "04-assets/logo/omu-wordmark-dark.svg",
+          "sha256": "964b496bea0363ef0a23a8606d1d3c51db93c7f5750880278d017620ccf44750",
+          "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
+        },
+        {
+          "path": "04-assets/logo/omu-wordmark-light.svg",
+          "sha256": "1be01d7005a4c244554b9a94a6ae3fa8ec7cceae9a84fe2fced89c36a6c704ab",
+          "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
+        },
+        {
+          "path": "04-assets/logo/omu-symbol-dark-on-light.svg",
+          "sha256": "5ca8e7a6ea76812679bc4d0f4c7c11e7811198264ad888e15b1d97f56b20a1ef",
+          "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
+        },
+        {
+          "path": "04-assets/logo/omu-symbol-light-on-dark.svg",
+          "sha256": "1050a6706cbef801b8a3b6be5a59c7e6ecf799fa86ddd5baf1698cf05c0f92ca",
+          "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
+        },
+        {
+          "path": "04-assets/logo/omu-mark-dark.svg",
+          "sha256": "cb6ada38e5147992556f851f28d42dd05c56718a226a6b8ecead847477275040",
+          "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
+        },
+        {
+          "path": "04-assets/logo/omu-mark-light.svg",
+          "sha256": "2838a58033c9572f4a66b21d917513139a94d469677c893cd39042381df285b2",
+          "role": "Живой файл, подготовлен в дизайн-системе SRC-011"
+        }
+      ],
+      "note": "Живые SVG пришли в экспорте SRC-011 уже переименованными и перекрашенными в палитру; сырьё сохранено как есть. C2PA-метаданные внутри SVG не вырезаны, вопреки описанию экспорта"
+    },
+    {
+      "id": "SRC-011",
+      "title": "Экспорт дизайн-системы OMU (обновление 2026-09-11)",
+      "status": "partial",
+      "originalNames": ["OMU Design System.zip"],
+      "repositoryFiles": [
+        {
+          "path": "06-design-system/_ds_manifest.json",
+          "sha256": "50b240a4da0a4be8bd6715c5e5171cd164c0f076a3f7831069e809ba0bf251db",
+          "role": "Манифест бандла; бандл целиком лежит в 06-design-system/"
+        }
+      ],
+      "note": "Архив целиком не сохранён: SHA-256 zip 16004b0743d62c488993654ab1f587a6c336554e65b228795ce6f93f70c77c0e. Из него взяты 06-design-system/ (без шрифтов и сырья), решения по палитре и начертанию из export/repo-update/APPLY.md. Тексты в 06-design-system/ поправлены там, где расходились с репозиторием: trial-шрифты, цвета логотипа, интерьерные рендеры"
+    },
+    {
+      "id": "SRC-012",
+      "title": "Лицензионный комплект шрифтов TypeType, Desktop license",
+      "status": "restricted-license",
+      "originalNames": [
+        "TT_Bluescreens_Pro_Extended_Bold.{ttf,woff,woff2,otf,eot}",
+        "TT-Firs-Text-Normal.{ttf,otf}",
+        "TT_Firs_Text_Normal.{woff,woff2,eot}",
+        "Desktop-License.pdf",
+        "tt_bluescreens_pro_specimen.pdf",
+        "TT-Firs-Text_specimen.pdf"
+      ],
+      "repositoryFiles": [],
+      "note": "Файлы не хранятся в git: Desktop license запрещает передачу файлов шрифта, репозиторий публичный. Хранятся локально в 04-assets/fonts/ (.gitignore). SHA-256: TT_Bluescreens_Pro_Extended_Bold.woff2 5759077892228f54ba481f251eb0985cef0ad3832dcde9acefb08b576f3884c8; TT_Bluescreens_Pro_Extended_Bold.woff 61611af63ff0c96b2258fb6596fd76c8ccf7b01f6877f223f41825d78ea735bc; TT_Bluescreens_Pro_Extended_Bold.ttf 9e167fdccb83dab43e5d2dfef1e1a8af216423422ee3c0e94aec0ac5b08710e2; TT_Firs_Text_Normal.woff2 5ad9c52f95ef373fd19bd14e16dbe1dcb8231343313ae672980a0eadfd29c990; TT_Firs_Text_Normal.woff 9c5c73feed3f58ac6b6122cef84326f2ec385718cdd3c5ed39a3b356330036ec; TT-Firs-Text-Normal.ttf 3def1538d126a6b628550a6a7d83800aa6135bdf9a2b3cbc71a7ee28806fa392. Обе PDF-лицензии побайтно одинаковы (общий договор, 9fbaa2ee…8b11); инвойса с числом рабочих мест нет"
     }
   ]
 }

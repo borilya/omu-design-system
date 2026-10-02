@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x380" name="Content" subtitle="Feature tile, product card, colorways, statement, specs" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script><script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script><script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><script src="../../_ds_bundle.js"></script><style>html,body{margin:0}body{background:var(--omu-white)}.card{padding:24px;display:flex;flex-direction:column;gap:20px}.row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}</style></head><body><div id="root"></div><script type="text/babel">
+const { FeatureTile, ProductCard, ColorwaySwatch, Statement, SpecRow } = window.OMUDesignSystem_04cba0;
+function App(){const [cw,setCw]=React.useState('olive');return <div className="card">
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:16,alignItems:'start'}}>
+<FeatureTile title="Universal outlets" body="That work with UK, US, and EU plugs — no adapters, no guessing." aspect="1 / 1" style={{padding:20}}/>
+<FeatureTile image="../../assets/renders/hero/omu-3x-hero-olive-r03.png" aspect="1 / 1"/>
+<ProductCard name="3× Universal" meta="Olive · 1.8m cable" price="AED 349" image="../../assets/renders/front/omu-3x-front-olive-r03.png"/>
+</div>
+<div className="row">{['warm-grey','black','terracotta','olive','navy'].map(c=><ColorwaySwatch key={c} colorway={c} selected={cw===c} showLabel onClick={()=>setCw(c)}/>)}</div>
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16,alignItems:'start'}}>
+<Statement tone="dark" size="h1" style={{padding:24,borderRadius:'var(--omu-radius-lg)'}}>Hide nothing.</Statement>
+<div><SpecRow label="Body" value="160 × 50 × 36 mm"/><SpecRow label="Cable" value="1800 mm, braided"/></div>
+</div>
+</div>}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

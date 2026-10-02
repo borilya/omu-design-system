@@ -1,0 +1,5 @@
+/* OMU fonts. Licensed TypeType Desktop kit — files are NOT in git, put them into 04-assets/fonts/ locally.
+   @font-face on a public site needs a separate Web Font licence.
+   Display: TT Bluescreens Pro Extended Bold (700). Text: TT Firs Text Normal (400). */
+@font-face{font-family:'TT Bluescreens Pro';src:url("../assets/fonts/TT_Bluescreens_Pro_Extended_Bold.woff2") format("woff2"),url("../assets/fonts/TT_Bluescreens_Pro_Extended_Bold.woff") format("woff"),url("../assets/fonts/TT_Bluescreens_Pro_Extended_Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'TT Firs Text';src:url("../assets/fonts/TT_Firs_Text_Normal.woff2") format("woff2"),url("../assets/fonts/TT_Firs_Text_Normal.woff") format("woff"),url("../assets/fonts/TT-Firs-Text-Normal.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}

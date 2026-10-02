@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>OMU Style Guide</title>
+<link rel="stylesheet" href="tokens/fonts.css">
+<style>doc-page:not(:defined){visibility:hidden}
+:root{--white:#D7D2CB;--black:#262423;--tile:#E2DED8;--border:rgba(38,36,35,.16)}
+body{font-family:'TT Firs Text',-apple-system,sans-serif}
+h1,h2,h3{font-family:'TT Bluescreens Pro','Helvetica Neue',sans-serif;font-weight:700;margin:0}
+h1{font-size:40px;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:26px;letter-spacing:-.015em;margin-top:0}
+h3{font-size:18px;letter-spacing:0;text-transform:uppercase;letter-spacing:.08em;color:rgba(38,36,35,.62);margin-bottom:12px}
+p{line-height:1.6;margin:0 0 10px}
+.section{break-before:page;padding-top:4px}
+.section:first-child{break-before:auto}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:rgba(38,36,35,.62);margin-bottom:6px}
+.swatchrow{display:flex;gap:16px;margin:16px 0;break-inside:avoid}
+.swatch{flex:1;border-radius:12px;padding:16px;color:#D7D2CB;break-inside:avoid}
+.swatch.on-white{color:#262423}
+.swatch .name{font-weight:600;font-size:14px}
+.swatch .hex{font-family:monospace;font-size:13px;opacity:.8}
+table{width:100%;border-collapse:collapse;margin:10px 0 20px;break-inside:avoid}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-size:14px}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:rgba(38,36,35,.62)}
+.tile{background:var(--tile);border-radius:20px;padding:24px;margin:14px 0;break-inside:avoid}
+.cwrow{display:flex;gap:10px;margin:14px 0;break-inside:avoid}
+.cw{flex:1;border-radius:12px;height:56px;position:relative}
+.cw span{position:absolute;bottom:6px;left:8px;font-size:11px;color:#D7D2CB;font-family:monospace}
+ul{margin:0 0 10px;padding-left:20px;line-height:1.6}
+.pill{display:inline-block;background:var(--black);color:var(--white);border-radius:999px;padding:4px 12px;font-size:12px;margin:2px 4px 2px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.compbox{border:1px solid var(--border);border-radius:12px;padding:14px;break-inside:avoid}
+.compbox .g{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:rgba(38,36,35,.55);margin-bottom:6px}
+footer.pagefoot{font-size:10px;color:rgba(38,36,35,.5)}
+</style></head><body>
+<doc-page margin="0.85in">
+
+<div slot="footer" class="pagefoot">OMU Design System — Style Guide</div>
+
+<section class="section" style="text-align:center;padding-top:2.2in">
+<img src="assets/logo/omu-wordmark-dark.svg" style="height:56px;margin-bottom:40px">
+<h1 style="font-size:52px">Hide nothing.</h1>
+<p style="font-size:16px;color:rgba(38,36,35,.62);margin-top:14px">Design System Style Guide</p>
+</section>
+
+<section class="section">
+<h3>Brand platform</h3>
+<h2>The quiet glow of a good find.</h2>
+<p style="margin-top:14px">OMU makes extension cords, power strips, cables and accessories for the UAE market, positioned as interior objects rather than electronics — things you leave out on the counter next to the lamp and the vase.</p>
+<p>Audience: affluent Dubai expats, mostly men 28–45, $10k+ income, who keep tuning their homes and won't tolerate cheap plastic on display.</p>
+<table><tr><th>Purpose</th><td>Even what we hide deserves to be beautiful. Especially what we touch every day.</td></tr>
+<tr><th>Essence</th><td>The quiet glow of a good find.</td></tr>
+<tr><th>Tagline</th><td>Hide nothing.</td></tr>
+<tr><th>One-liner</th><td>The only power strip you won't want to hide.</td></tr>
+<tr><th>Positioning</th><td>OMU isn't a power strip. It's an interior object, made to be seen — the only one in a category of cheap plastic.</td></tr></table>
+<h3 style="margin-top:20px">First product</h3>
+<p>OMU Extension cord, 3× Universal, Rev. 03 — 160 × 50 × 36 mm, three universal Type G outlets, two USB-C, a 1800 mm braided nylon cord, five magnets plus a mounting plate. Five production colorways: Warm grey · Black · Terracotta/brown · Olive · Navy.</p>
+</section>
+
+<section class="section">
+<h3>Voice</h3>
+<h2>Warm, quietly witty, exacting about words, confident without bragging.</h2>
+<p style="margin-top:14px">Warm conversational English — contractions, plain words, addressed to one smart friend. Dry humour in the corner of the eye, never a joke for its own sake.</p>
+<table><tr><th>Principle</th><th>Bad</th><th>Good</th></tr>
+<tr><td>Warm, like talking at home</td><td>"This product is crafted from premium-grade materials"</td><td>"Pick it up, and you'll get why you won't want to tuck it behind the couch."</td></tr>
+<tr><td>A smile in the corner of the eye</td><td>"Say goodbye to ugly cords!"</td><td>"Most power strips are made to disappear. This one didn't get the memo."</td></tr>
+<tr><td>Exacting about detail</td><td>"Stylish design and premium quality"</td><td>"A matte shell with no glare. Seams you can't feel."</td></tr>
+<tr><td>Quietly confident</td><td>"The best designer power strip — a revolution!!!"</td><td>"A power strip you'll leave out in the open. That's the whole idea."</td></tr></table>
+<h3>Rules</h3>
+<p>One warm <em>you</em>, never "the consumer." A full stop instead of an exclamation mark, nearly always. Sentence case everywhere except labels and the name OMU. Short sentences. Emoji: effectively none.</p>
+<h3>Stop words</h3>
+<p><span class="pill">premium</span><span class="pill">innovative</span><span class="pill">stylish</span><span class="pill">high-quality</span><span class="pill">revolutionary</span><span class="pill">sleek</span><span class="pill">cutting-edge</span></p>
+<h3 style="margin-top:16px">Mandated strings — quote verbatim</h3>
+<ul><li>Tagline / hero: <strong>Hide nothing.</strong></li><li>One-liner: <strong>The only power strip you won't want to hide.</strong></li><li>Post-purchase: <strong>What a find.</strong></li><li>Pillars: It's made to be seen. · No detail left rough. · A quiet pleasure, every day. · Safe, without making a thing of it.</li></ul>
+</section>
+
+<section class="section">
+<h3>Colour</h3>
+<h2>Three colours, Warm Gray family.</h2>
+<div class="swatchrow">
+<div class="swatch on-white" style="background:#D7D2CB"><div class="name">White</div><div class="hex">#D7D2CB</div></div>
+<div class="swatch" style="background:#262423"><div class="name">Black</div><div class="hex">#262423</div></div>
+</div>
+<p>White is a warm light stone — not white. Black is a warm very dark neutral — not black. All typography lives on the White/Black pair (contrast 10.28) — there is no third communications colour.</p>
+<h3 style="margin-top:20px">Surfaces</h3>
+<table><tr><th>Role</th><th>Value</th></tr>
+<tr><td>Surface tile</td><td>#E2DED8</td></tr><tr><td>Surface sunken</td><td>#CBC5BD</td></tr>
+<tr><td>Border</td><td>rgba(38,36,35,.16)</td></tr><tr><td>Border strong</td><td>rgba(38,36,35,.32)</td></tr></table>
+<h3>Product colorways (Cool Gray, Rev. 03) — never used as page surfaces</h3>
+<div class="cwrow">
+<div class="cw" style="background:#A09B95"><span>Warm grey</span></div>
+<div class="cw" style="background:#1D1C1B"><span>Black</span></div>
+<div class="cw" style="background:#371811"><span>Terracotta</span></div>
+<div class="cw" style="background:#17200F"><span>Olive</span></div>
+<div class="cw" style="background:#415364"><span>Navy</span></div>
+</div>
+</section>
+
+<section class="section">
+<h3>Typography</h3>
+<h2>TT Bluescreens Pro Extended Bold for headings, TT Firs Text for body.</h2>
+<p style="margin-top:14px;font-family:'TT Bluescreens Pro';font-size:22px">Headings — a wide geometric grotesque, negative tracking at large sizes.</p>
+<p style="font-family:'TT Firs Text'">Body — TT Firs Text Normal, set for long, comfortable reading.</p>
+<h3 style="margin-top:20px">Draft scale (modular 1.25, base 16)</h3>
+<table><tr><th>Token</th><th>Size</th><th>Line height</th><th>Tracking</th></tr>
+<tr><td>Display</td><td>64px</td><td>1.05</td><td>-0.02em</td></tr>
+<tr><td>H1</td><td>48px</td><td>1.1</td><td>-0.015em</td></tr>
+<tr><td>H2</td><td>32px</td><td>1.15</td><td>-0.01em</td></tr>
+<tr><td>H3</td><td>24px</td><td>1.25</td><td>0</td></tr>
+<tr><td>Lead</td><td>20px</td><td>1.5</td><td>—</td></tr>
+<tr><td>Body</td><td>16px</td><td>1.6</td><td>—</td></tr>
+<tr><td>Caption</td><td>14px</td><td>1.4</td><td>—</td></tr>
+<tr><td>Label</td><td>14px, uppercase</td><td>—</td><td>0.08em</td></tr></table>
+<p>Uppercase appears only in small labels and in the name OMU.</p>
+</section>
+
+<section class="section">
+<h3>Spacing, radii, elevation</h3>
+<h2>4px step. Soft-rectangle corners.</h2>
+<table><tr><th>Spacing</th><th colspan="2">4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 / 128 px</th></tr>
+<tr><th>Radii</th><td>sm 6px · md 12px · lg 20px · pill 999px</td></tr>
+<tr><th>Container</th><td>1200px</td></tr>
+<tr><th>Shadow soft</th><td>0 2px 8px rgba(38,36,35,.06)</td></tr>
+<tr><th>Shadow lift</th><td>0 12px 32px rgba(38,36,35,.10)</td></tr></table>
+<h3 style="margin-top:16px">Cards &amp; surfaces</h3>
+<div class="tile"><p style="margin:0">A card is a flat plane — light grey tile, 20px radius, no border, no shadow, contents padded 32px. Where separation is needed, a 1px hairline of Black at 16%. Shadows are diffuse and shallow — nothing glossy, no glass, no neon, no gradients as decoration.</p></div>
+<h3>Motion</h3>
+<p>220ms, cubic-bezier(.2,.6,.2,1). Fades and small position shifts only — no bounce, no spring. Hover: opacity fade to ~0.78, or border darkening. Press: no shrink or scale — state is carried by fill. Focus: border goes to Black, no glow.</p>
+</section>
+
+<section class="section">
+<h3>Imagery</h3>
+<h2>Two registers, never mixed.</h2>
+<table><tr><th>Studio</th><td>Object on white or transparent, soft diffuse shadow, neutral top light, 3/4-from-above angle. The main device: cord laid out in concentric coils around the body, plug set apart — the recognisable brand silhouette. No captions, callouts, icons or badges over a studio frame.</td></tr>
+<tr><th>Interior</th><td>Object small and off-centre in a real home — books, a lamp, a throw. Warm soft light, long blurred shadows. Natural materials: oak, marble, travertine, leather, velvet, wool. No people. Existing frames are vertical only.</td></tr></table>
+<p>Colour vibe: warm, low-contrast, matte. Cool sterile showroom lighting and magazine gloss are out of bounds.</p>
+<h3 style="margin-top:16px">Iconography</h3>
+<p>There is no OMU icon system — no icon font, no SVG sprite. Instead: the supplied logo SVGs; typographic marks in place of icons (the Select caret is two 6px triangles drawn in CSS); product-side marking is laser-etched engraving, not iconography. Emoji are not used.</p>
+</section>
+
+<section class="section">
+<h3>Hard prohibitions</h3>
+<h2>Any one of these makes the material not-OMU.</h2>
+<ul style="margin-top:14px">
+<li>Bright or blinking LEDs, especially blue</li>
+<li>Glossy highlights, gradients, glass and neon effects</li>
+<li>Office/techno aesthetics and aggressive engineering</li>
+<li>Sterile showroom or magazine gloss in interior frames</li>
+<li>The product hidden, cropped, or shown without its cord</li>
+<li>Callouts, icons, badges or promo plates over a studio frame</li>
+<li>Exclamation marks, stop words, scattered emoji</li>
+<li>Cyrillic in brand communication</li>
+<li>The words socket / outlet device / wiring</li>
+<li>The brand name written "Omu" or "omu" in running text</li>
+</ul>
+</section>
+
+<section class="section">
+<h3>Components</h3>
+<h2>Authored primitives, sized to what the brand's surfaces need.</h2>
+<div class="grid2" style="margin-top:16px">
+<div class="compbox"><div class="g">Core</div>Button · Logo · Tag · Divider</div>
+<div class="compbox"><div class="g">Forms</div>Input · Select · Checkbox</div>
+<div class="compbox"><div class="g">Content</div>FeatureTile · ProductCard · ColorwaySwatch · Statement · SpecRow</div>
+</div>
+<h3 style="margin-top:20px">Status &amp; caveats</h3>
+<ul>
+<li>Fonts are licensed TypeType desktop files (TT Bluescreens Pro Extended Bold, TT Firs Text Normal). They are <b>not in the repository</b> — the licence forbids distributing font files. Put your licensed copies into <code>04-assets/fonts/</code>; without them the guide falls back to Helvetica. Web use via @font-face needs a separate Web Font licence.</li>
+<li>The type scale, spacing scale and radii are drafts, not owner-approved.</li>
+<li>Six approved interior renders live in <code>03-product/renders/interior/</code>; this guide still shows studio renders only.</li>
+<li>No close-up texture shots, no packaging artwork.</li>
+<li>Pantone/CMYK values are missing for Black.</li>
+</ul>
+</section>
+
+</doc-page>
+<script src="doc-page.js"></script>
+</body></html>

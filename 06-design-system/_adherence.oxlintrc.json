@@ -1,0 +1,335 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/content/**",
+              "components/core/**",
+              "components/forms/**",
+              "doc-page.js",
+              "ui_kits/social/**",
+              "ui_kits/web/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:TT Bluescreens Pro|TT Firs Text))/i]",
+        "message": "Font not provided by the design system. Available: TT Bluescreens Pro, TT Firs Text."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|disabled|href|children|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: variant, size, disabled, href, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|secondary|ghost|inverse)$/]",
+        "message": "<Button> variant must be one of 'primary' | 'secondary' | 'ghost' | 'inverse'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:sm|md|lg)$/]",
+        "message": "<Button> size must be one of 'sm' | 'md' | 'lg'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Checkbox'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|disabled|key|ref|className|style|children)$/]",
+        "message": "<Checkbox> doesn't accept that prop. Declared props: label, disabled."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ColorwaySwatch'] > JSXAttribute > JSXIdentifier[name!=/^(?:colorway|selected|size|showLabel|key|ref|className|style|children)$/]",
+        "message": "<ColorwaySwatch> doesn't accept that prop. Declared props: colorway, selected, size, showLabel."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ColorwaySwatch'] > JSXAttribute[name.name='colorway'] > Literal[value!=/^(?:warm-grey|black|terracotta|olive|navy)$/]",
+        "message": "<ColorwaySwatch> colorway must be one of 'warm-grey' | 'black' | 'terracotta' | 'olive' | 'navy'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Divider'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|spacing|key|ref|className|style|children)$/]",
+        "message": "<Divider> doesn't accept that prop. Declared props: tone, spacing."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Divider'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:default|inverse)$/]",
+        "message": "<Divider> tone must be one of 'default' | 'inverse'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FeatureTile'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|body|image|imageAlt|tone|aspect|key|ref|className|style|children)$/]",
+        "message": "<FeatureTile> doesn't accept that prop. Declared props: title, body, image, imageAlt, tone, aspect."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FeatureTile'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:tile|dark)$/]",
+        "message": "<FeatureTile> tone must be one of 'tile' | 'dark'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Input'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|hint|invalid|key|ref|className|style|children)$/]",
+        "message": "<Input> doesn't accept that prop. Declared props: label, hint, invalid."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute > JSXIdentifier[name!=/^(?:mark|tone|height|assetPath|key|ref|className|style|children)$/]",
+        "message": "<Logo> doesn't accept that prop. Declared props: mark, tone, height, assetPath."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute[name.name='mark'] > Literal[value!=/^(?:wordmark|symbol)$/]",
+        "message": "<Logo> mark must be one of 'wordmark' | 'symbol'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:dark|light)$/]",
+        "message": "<Logo> tone must be one of 'dark' | 'light'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ProductCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|meta|price|image|imageAlt|footer|key|ref|className|style|children)$/]",
+        "message": "<ProductCard> doesn't accept that prop. Declared props: name, meta, price, image, imageAlt, footer."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Select'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|options|key|ref|className|style|children)$/]",
+        "message": "<Select> doesn't accept that prop. Declared props: label, options."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SpecRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|value|tone|key|ref|className|style|children)$/]",
+        "message": "<SpecRow> doesn't accept that prop. Declared props: label, value, tone."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SpecRow'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:default|inverse)$/]",
+        "message": "<SpecRow> tone must be one of 'default' | 'inverse'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Statement'] > JSXAttribute > JSXIdentifier[name!=/^(?:eyebrow|tone|size|align|children|key|ref|className|style|children)$/]",
+        "message": "<Statement> doesn't accept that prop. Declared props: eyebrow, tone, size, align, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Statement'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:default|dark)$/]",
+        "message": "<Statement> tone must be one of 'default' | 'dark'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Statement'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:display|h1)$/]",
+        "message": "<Statement> size must be one of 'display' | 'h1'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Statement'] > JSXAttribute[name.name='align'] > Literal[value!=/^(?:left|center)$/]",
+        "message": "<Statement> align must be one of 'left' | 'center'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Tag'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|children|key|ref|className|style|children)$/]",
+        "message": "<Tag> doesn't accept that prop. Declared props: tone, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Tag'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:neutral|solid)$/]",
+        "message": "<Tag> tone must be one of 'neutral' | 'solid'."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Button": {
+        "replaces": []
+      },
+      "Checkbox": {
+        "replaces": []
+      },
+      "ColorwaySwatch": {
+        "replaces": []
+      },
+      "Divider": {
+        "replaces": []
+      },
+      "FeatureTile": {
+        "replaces": []
+      },
+      "Input": {
+        "replaces": []
+      },
+      "Logo": {
+        "replaces": []
+      },
+      "ProductCard": {
+        "replaces": []
+      },
+      "Select": {
+        "replaces": []
+      },
+      "SpecRow": {
+        "replaces": []
+      },
+      "Statement": {
+        "replaces": []
+      },
+      "Tag": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--omu-bg",
+      "--omu-bg-inverse",
+      "--omu-black",
+      "--omu-border",
+      "--omu-border-strong",
+      "--omu-container",
+      "--omu-cw-black-panel",
+      "--omu-cw-black-shell",
+      "--omu-cw-graphite-panel",
+      "--omu-cw-graphite-shell",
+      "--omu-cw-navy-panel",
+      "--omu-cw-navy-shell",
+      "--omu-cw-olive-panel",
+      "--omu-cw-olive-shell",
+      "--omu-cw-terracotta-panel",
+      "--omu-cw-terracotta-shell",
+      "--omu-cw-warm-grey-panel",
+      "--omu-cw-warm-grey-shell",
+      "--omu-duration",
+      "--omu-ease",
+      "--omu-fg",
+      "--omu-fg-inverse",
+      "--omu-fg-muted",
+      "--omu-fg-muted-inverse",
+      "--omu-font-body",
+      "--omu-font-heading",
+      "--omu-lh-body",
+      "--omu-lh-caption",
+      "--omu-lh-display",
+      "--omu-lh-h1",
+      "--omu-lh-h2",
+      "--omu-lh-h3",
+      "--omu-lh-lead",
+      "--omu-logo-dark",
+      "--omu-logo-symbol-light",
+      "--omu-ls-display",
+      "--omu-ls-h1",
+      "--omu-ls-h2",
+      "--omu-ls-h3",
+      "--omu-ls-label",
+      "--omu-radius-lg",
+      "--omu-radius-md",
+      "--omu-radius-pill",
+      "--omu-radius-sm",
+      "--omu-shadow-lift",
+      "--omu-shadow-soft",
+      "--omu-space-1",
+      "--omu-space-12",
+      "--omu-space-16",
+      "--omu-space-2",
+      "--omu-space-24",
+      "--omu-space-3",
+      "--omu-space-32",
+      "--omu-space-4",
+      "--omu-space-6",
+      "--omu-space-8",
+      "--omu-surface-page",
+      "--omu-surface-sunken",
+      "--omu-surface-tile",
+      "--omu-text-body",
+      "--omu-text-caption",
+      "--omu-text-display",
+      "--omu-text-h1",
+      "--omu-text-h2",
+      "--omu-text-h3",
+      "--omu-text-lead",
+      "--omu-white"
+    ],
+    "tokenKinds": {
+      "--omu-white": "color",
+      "--omu-black": "color",
+      "--omu-bg": "color",
+      "--omu-fg": "color",
+      "--omu-bg-inverse": "color",
+      "--omu-fg-inverse": "color",
+      "--omu-surface-page": "color",
+      "--omu-surface-tile": "color",
+      "--omu-surface-sunken": "color",
+      "--omu-border": "color",
+      "--omu-border-strong": "color",
+      "--omu-fg-muted": "color",
+      "--omu-fg-muted-inverse": "color",
+      "--omu-logo-dark": "color",
+      "--omu-logo-symbol-light": "color",
+      "--omu-cw-warm-grey-panel": "color",
+      "--omu-cw-warm-grey-shell": "color",
+      "--omu-cw-black-panel": "color",
+      "--omu-cw-black-shell": "color",
+      "--omu-cw-terracotta-panel": "color",
+      "--omu-cw-terracotta-shell": "color",
+      "--omu-cw-olive-panel": "color",
+      "--omu-cw-olive-shell": "color",
+      "--omu-cw-navy-panel": "color",
+      "--omu-cw-navy-shell": "color",
+      "--omu-cw-graphite-panel": "color",
+      "--omu-cw-graphite-shell": "color",
+      "--omu-font-heading": "font",
+      "--omu-font-body": "font",
+      "--omu-text-display": "font",
+      "--omu-lh-display": "other",
+      "--omu-ls-display": "spacing",
+      "--omu-text-h1": "font",
+      "--omu-lh-h1": "other",
+      "--omu-ls-h1": "spacing",
+      "--omu-text-h2": "font",
+      "--omu-lh-h2": "other",
+      "--omu-ls-h2": "spacing",
+      "--omu-text-h3": "font",
+      "--omu-lh-h3": "other",
+      "--omu-ls-h3": "other",
+      "--omu-text-lead": "font",
+      "--omu-lh-lead": "other",
+      "--omu-text-body": "font",
+      "--omu-lh-body": "other",
+      "--omu-text-caption": "font",
+      "--omu-lh-caption": "other",
+      "--omu-ls-label": "spacing",
+      "--omu-space-1": "spacing",
+      "--omu-space-2": "spacing",
+      "--omu-space-3": "spacing",
+      "--omu-space-4": "spacing",
+      "--omu-space-6": "spacing",
+      "--omu-space-8": "spacing",
+      "--omu-space-12": "spacing",
+      "--omu-space-16": "spacing",
+      "--omu-space-24": "spacing",
+      "--omu-space-32": "spacing",
+      "--omu-radius-sm": "radius",
+      "--omu-radius-md": "radius",
+      "--omu-radius-lg": "radius",
+      "--omu-radius-pill": "radius",
+      "--omu-shadow-soft": "shadow",
+      "--omu-shadow-lift": "shadow",
+      "--omu-container": "spacing",
+      "--omu-ease": "other",
+      "--omu-duration": "other"
+    },
+    "fontFamilies": [
+      "TT Bluescreens Pro",
+      "TT Firs Text"
+    ]
+  }
+}

@@ -1,32 +1,39 @@
 /* OMU — токены дизайн-системы для веба и артефактов.
    Источник правды: 02-identity/color.md, typography.md, tokens.json.
-   Обновлено 2026-07-30.
+   Обновлено 2026-10-02.
 
    ⚠️ Шкалы размеров, отступов и радиусов помечены DRAFT: это предложение,
    не решение владельца. См. _meta/open-questions.md. */
 
 :root {
   /* ── Палитра коммуникаций ──────────────────────────────────────
-     Три цвета. Warm Gray семейство. НЕ путать с цветами продукта. */
+     Два цвета. Warm Gray семейство. НЕ путать с цветами продукта.
+     Green #808B74 удалён 2026-09-11, акцентного цвета нет. */
   --omu-white: #D7D2CB;   /* Pantone Warm Gray 1 C. Тёплый светлый камень, НЕ белый */
   --omu-black: #262423;   /* Тёплый очень тёмный нейтральный, НЕ чёрный */
-  --omu-green: #808B74;   /* Плоскость и акцент. НЕ поверхность для текста */
 
   /* Рабочие роли. Вся типографика живёт на паре white/black */
   --omu-bg: var(--omu-white);
   --omu-fg: var(--omu-black);
   --omu-bg-inverse: var(--omu-black);
   --omu-fg-inverse: var(--omu-white);
-  --omu-accent: var(--omu-green);
+
+  /* DRAFT — производные поверхности, выведены из White */
+  --omu-surface-page: var(--omu-white);
+  --omu-surface-tile: #E2DED8;
+  --omu-surface-sunken: #CBC5BD;
+  --omu-border: rgba(38, 36, 35, .16);
+  --omu-border-strong: rgba(38, 36, 35, .32);
+  --omu-fg-muted: rgba(38, 36, 35, .62);
+  --omu-fg-muted-inverse: rgba(215, 210, 203, .62);
 
   /* Контраст WCAG 2.1:
-     white/black 10.28 — любой текст
-     black/green  4.31 — только крупный текст от 24px или 19px bold
-     white/green  2.38 — не годится для текста вообще */
+     white/black 10.28 — любой текст */
 
   /* ── Типографика ───────────────────────────────────────────────
-     Файлы шрифтов trial TypeType: внутренние черновики можно,
-     внешний релиз — только по коммерческой лицензии. */
+     TypeType Desktop license. Файлы не в git — положить локально в 04-assets/fonts/.
+     @font-face на публичном сайте требует отдельной Web Font лицензии.
+     Заголовки: TT Bluescreens Pro Extended Bold, 700. Текст: TT Firs Text Normal, 400. */
   --omu-font-heading: 'TT Bluescreens Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --omu-font-body: 'TT Firs Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
@@ -72,15 +79,11 @@ body {
 
 h1, h2, h3, .omu-display {
   font-family: var(--omu-font-heading);
-  font-weight: 500;
+  font-weight: 700;
 }
 
-/* Зелёная плоскость: текст только тёмный и только крупный */
-.omu-surface-green {
-  background: var(--omu-green);
-  color: var(--omu-black);
-}
-.omu-surface-green :where(p, li, small, .omu-body) {
-  /* контраст 4.31 — мелкий текст здесь не проходит WCAG AA */
-  font-size: var(--omu-text-h3);
+/* Плоскость Black — для высказываний и футера. Третьей поверхности нет */
+.omu-surface-inverse {
+  background: var(--omu-bg-inverse);
+  color: var(--omu-fg-inverse);
 }

@@ -1,0 +1,14 @@
+/* DRAFT scale (modular 1.25, base 16px) — proposed, not owner-approved. */
+:root{
+  --omu-font-heading:'TT Bluescreens Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --omu-font-body:'TT Firs Text',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+
+  --omu-text-display:64px; --omu-lh-display:1.05; /* @kind other */ --omu-ls-display:-0.02em;
+  --omu-text-h1:48px;      --omu-lh-h1:1.1; /* @kind other */      --omu-ls-h1:-0.015em;
+  --omu-text-h2:32px;      --omu-lh-h2:1.15; /* @kind other */     --omu-ls-h2:-0.01em;
+  --omu-text-h3:24px;      --omu-lh-h3:1.25; /* @kind other */     --omu-ls-h3:0; /* @kind other */
+  --omu-text-lead:20px;    --omu-lh-lead:1.5; /* @kind other */
+  --omu-text-body:16px;    --omu-lh-body:1.6; /* @kind other */
+  --omu-text-caption:14px; --omu-lh-caption:1.4; /* @kind other */
+  --omu-ls-label:0.08em;   /* small caps-style labels, uppercase */
+}
