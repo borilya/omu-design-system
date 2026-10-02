@@ -119,7 +119,7 @@ Warm conversational English — contractions (*you'll, it's, don't*), plain word
 
 What exists instead:
 
-- **The logo SVGs** in `assets/logo/` — wordmark (lowercase `omu`, 6.16 : 1, rectangular forms with rounded corners, letters touching so they read as one tie) and the symbol (the `m` in a circle) for avatars and favicons. Never redraw or approximate the mark; use the supplied files. The light files use palette White `#D7D2CB`; the bare mark (no circle) is in `omu-mark-*.svg`.
+- **The logo SVGs** in `assets/logo/` — wordmark (lowercase `omu`, 6.21 : 1, rectangular forms with rounded corners, letters touching so they read as one tie) and the symbol (the `m` in a circle) for avatars and favicons. Never redraw or approximate the mark; use the supplied files. The light files use palette White `#D7D2CB`; the bare mark (no circle) is in `omu-mark-*.svg`.
 - **Typographic marks in place of icons.** Where a UI would normally reach for a glyph, OMU uses a word or a hairline: the Select caret is two 6 px triangles drawn in CSS, the checkbox check-state is a solid fill with no tick glyph.
 - **Product-side marking** is engraving, not iconography: certification marks are laser-etched, matte, grey — present but not announcing themselves. Do not turn them into badges in a layout.
 - **Emoji are not used.**
